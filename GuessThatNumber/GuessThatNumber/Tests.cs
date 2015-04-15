@@ -20,6 +20,7 @@ namespace GuessThatNumber
         public void TestInputInvalid()
         {
             Assert.IsFalse(Program.ValidateInput("asdf"), "Invalid input returned true");
+            Assert.IsFalse(Program.ValidateInput("mi gato es muy grande!!!"), "Invalid input returned true");
         }
 
         [Test]
